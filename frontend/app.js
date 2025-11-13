@@ -61,7 +61,7 @@ form.addEventListener('submit', async (e)=>{
 
     // if high stress -> call backend to send email(s)
     if(stress >= 7){
-      showMessage('⚠️ High stress detected — please attend a short consultation in Room 205 at 3 PM.','success');
+      showMessage('⚠️ High stress detected — please attend a short consultation At DES Pune University in Room 303 at 3 PM.','success');
       
       if(email){
         // change URL if you deploy backend elsewhere
