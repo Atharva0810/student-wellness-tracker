@@ -63,9 +63,11 @@ form.addEventListener('submit', async (e)=>{
     if(stress >= 7){
       showMessage('⚠️ High stress detected — please attend a short consultation in Room 205 at 3 PM.','success');
 
+      const API_URL = "https://student-wellness-tracker.onrender.com/"; 
+
       if(email){
         // change URL if you deploy backend elsewhere
-        fetch('http://localhost:5000/send-email', {
+        fetch(`${API_URL}/send-email`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
